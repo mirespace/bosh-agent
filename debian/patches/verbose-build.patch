@@ -1,0 +1,12 @@
+--- a/bin/build
++++ b/bin/build
+@@ -6,7 +6,8 @@ agent_dir="$(cd "$(dirname "$0")" && cd
+ bin=$agent_dir/bin
+ 
+ pushd $agent_dir/main
+-  $bin/go build -o $agent_dir/out/bosh-agent
++  echo "building $agent_dir/out/bosh-agent"
++  $bin/go build -v -x -o $agent_dir/out/bosh-agent
+ popd
+ 
+ if [[ $GOOS = 'windows' ]]; then
