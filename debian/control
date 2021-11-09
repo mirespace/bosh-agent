@@ -1,0 +1,39 @@
+Source: bosh-agent
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Christian Ehrhardt <christian.ehrhardt@canonical.com>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-cloudfoundry-gosigar-dev,
+               golang-github-gofrs-uuid-dev,
+               golang-github-golang-mock-dev,
+               golang-github-kevinburke-ssh-config-dev,
+               golang-github-masterzen-winrm-dev,
+               golang-github-mitchellh-mapstructure-dev,
+               golang-github-onsi-ginkgo-dev,
+               golang-github-pkg-errors-dev,
+               golang-github-stretchr-testify-dev,
+               golang-golang-x-crypto-dev,
+               golang-golang-x-net-dev,
+               golang-gomega-dev
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/bosh-agent
+Vcs-Git: https://salsa.debian.org/go-team/packages/bosh-agent.git
+Homepage: https://github.com/cloudfoundry/bosh-agent
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/cloudfoundry/bosh-agent
+
+Package: bosh-agent
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: BOSH Agent runs on each BOSH deployed VM (program)
+ BOSH Agent• Documentation: bosh.io/docs (https://bosh.io/docs)•
+ Slack: #bosh on https://slack.cloudfoundry.org• Mailing list: cf-bosh
+ (https://lists.cloudfoundry.org/pipermail/cf-bosh)Developer Notes See
+ Dev Setup (docs/dev_setup.md).

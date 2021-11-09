@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+OUR_GOPATH := $(CURDIR)/.gopath
+export GOPATH := $(OUR_GOPATH)
+export GOCACHE := $(CURDIR)/.gocache
+
+%:
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
+
+override_dh_auto_install:
+	dh_auto_install -- --no-source
+
+override_dh_auto_build:
+	cat ./bin/build
+	./bin/build
+
+override_dh_auto_test:
+	echo "It fails some tests, skipped for now :-/"

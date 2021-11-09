@@ -1,0 +1,5 @@
+bosh-agent (2.398.0-0ubuntu1) jammy; urgency=medium
+
+  * Initial release based on dh-make-golang
+
+ -- Christian Ehrhardt <christian.ehrhardt@canonical.com>  Tue, 09 Nov 2021 12:02:18 +0100
