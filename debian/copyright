@@ -2,8 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bosh-agent
 Upstream-Contact: TODO
 Source: https://github.com/cloudfoundry/bosh-agent
-Files-Excluded:
-  vendor
 
 Files: *
 Copyright: 2014 Cloud Foundry
