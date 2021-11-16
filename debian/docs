@@ -1,0 +1,12 @@
+NOTICE
+vendor/code.cloudfoundry.org/clock/NOTICE
+vendor/code.cloudfoundry.org/tlsconfig/NOTICE
+vendor/github.com/cloudfoundry/bosh-davcli/NOTICE
+vendor/github.com/cloudfoundry/bosh-init/NOTICE
+vendor/github.com/cloudfoundry/bosh-utils/NOTICE
+vendor/github.com/cloudfoundry/gosigar/NOTICE
+vendor/github.com/cloudfoundry/socks5-proxy/NOTICE
+vendor/github.com/cloudfoundry/yagnats/NOTICE
+vendor/gopkg.in/yaml.v2/NOTICE
+vendor/gopkg.in/yaml.v3/NOTICE
+
