@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bosh-agent
-Upstream-Contact: TODO
+Upstream-Contact: cloudfoundry Developers <cf-dev@lists.cloudfoundry.org>
 Source: https://github.com/cloudfoundry/bosh-agent
 
 Files: *
@@ -8,7 +8,8 @@ Copyright: 2015 Cloud Foundry, 2012-2015 Pivotal Software, Inc
 License: Apache-2.0
 
 Files: debian/*
-Copyright: 2021 Christian Ehrhardt <christian.ehrhardt@canonical.com>
+Copyright: (c) 2021 Christian Ehrhardt <christian.ehrhardt@canonical.com>
+           (c) 2021 Miriam España Acebal <miriam.espana@canonical.com>
 License: Apache-2.0
 Comment: Debian packaging is licensed under the same terms as upstream
 
