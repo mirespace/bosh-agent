@@ -1,5 +1,5 @@
-bosh-agent (2.398.0-0ubuntu1) jammy; urgency=medium
+bosh-agent (2.398.0-0ubuntu1.18.04.1) bionic; urgency=medium
 
-  * Initial release based on dh-make-golang
+  * Packaging for Bionic
 
- -- Christian Ehrhardt <christian.ehrhardt@canonical.com>  Tue, 09 Nov 2021 12:02:18 +0100
+ -- Miriam España Acebal <miriam.espana@canonical.com>  Wed, 10 Nov 2021 11:36:54 +0100
