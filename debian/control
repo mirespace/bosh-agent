@@ -7,19 +7,7 @@ Testsuite: autopkgtest-pkg-go
 Priority: optional
 Build-Depends: debhelper-compat (= 12),
                dh-golang,
-               golang-any,
-               golang-github-cloudfoundry-gosigar-dev,
-               golang-github-gofrs-uuid-dev,
-               golang-github-golang-mock-dev,
-               golang-github-kevinburke-ssh-config-dev,
-               golang-github-masterzen-winrm-dev,
-               golang-github-mitchellh-mapstructure-dev,
-               golang-github-onsi-ginkgo-dev,
-               golang-github-pkg-errors-dev,
-               golang-github-stretchr-testify-dev,
-               golang-golang-x-crypto-dev,
-               golang-golang-x-net-dev,
-               golang-gomega-dev
+               golang-1.13-go
 Standards-Version: 4.5.0
 Vcs-Browser: https://salsa.debian.org/go-team/packages/bosh-agent
 Vcs-Git: https://salsa.debian.org/go-team/packages/bosh-agent.git
