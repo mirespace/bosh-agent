@@ -5,10 +5,11 @@ Uploaders: Christian Ehrhardt <christian.ehrhardt@canonical.com>
 Section: devel
 Testsuite: autopkgtest-pkg-go
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper,
+               debhelper-compat (= 11),
                dh-golang,
                golang-1.13-go
-Standards-Version: 4.5.0
+Standards-Version: 4.1.4
 Vcs-Browser: https://salsa.debian.org/go-team/packages/bosh-agent
 Vcs-Git: https://salsa.debian.org/go-team/packages/bosh-agent.git
 Homepage: https://github.com/cloudfoundry/bosh-agent
