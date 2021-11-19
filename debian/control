@@ -16,7 +16,8 @@ XS-Go-Import-Path: github.com/cloudfoundry/bosh-agent
 Package: bosh-agent
 Architecture: any
 Depends: ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
+         monit (= 5.2.5-2ubuntu1.18.04.1)
 Built-Using: ${misc:Built-Using}
 Description: BOSH agent process
  A process that runs continuously on each VM that BOSH deploys
