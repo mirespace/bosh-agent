@@ -1,1 +1,1 @@
-out/bosh-agent /usr/bin/
+out/bosh-agent /var/vcap/bosh/bin/
