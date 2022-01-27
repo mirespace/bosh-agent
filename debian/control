@@ -1,0 +1,39 @@
+Source: bosh-agent
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Christian Ehrhardt <christian.ehrhardt@canonical.com>,
+           Miriam España Acebal <miriam.espana@canonical.com>
+Section: admin
+Priority: optional
+Build-Depends: debhelper,
+               debhelper-compat (= 11),
+               dh-golang,
+               golang-1.13-go
+Standards-Version: 4.1.4
+Homepage: https://github.com/cloudfoundry/bosh-agent
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/cloudfoundry/bosh-agent
+
+Package: bosh-agent
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         monit (= 5.2.5-2ubuntu1.18.04.1)
+Built-Using: ${misc:Built-Using}
+Description: BOSH agent process
+ A process that runs continuously on each VM that BOSH deploys
+ (one Agent process per VM). The Agent executes tasks in
+ response to messages it receives from the Director.
+ .
+ This package contains the binary.
+ .
+ BOSH Agent runs on each BOSH deployed VM (program)
+ .
+ BOSH Agent Documentation: bosh.io/docs
+ (https://bosh.io/docs)
+ .
+ Slack: #bosh on https://slack.cloudfoundry.org
+ .
+ Mailing list: cf-bosh
+ (https://lists.cloudfoundry.org/pipermail/cf-bosh)
+ .
+ Developer Notes See Dev Setup (docs/dev_setup.md).

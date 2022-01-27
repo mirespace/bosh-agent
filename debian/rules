@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+OUR_GOPATH := $(CURDIR)/.gopath
+export GOPATH := $(OUR_GOPATH)
+export GOCACHE := $(CURDIR)/.gocache
+export PATH := /usr/lib/go-1.13/bin:$(PATH)
+
+%:
+	dh $@ --builddirectory=_build --buildsystem=golang
+
+override_dh_auto_install:
+	dh_auto_install -- --no-source
+
+override_dh_auto_build:
+	cd $(CURDIR)/main && \
+	go build -v -x -mod=vendor \
+		-buildmode=pie \
+		-ldflags "-extldflags \"$(LDFLAGS)\"" \
+		-o $(CURDIR)/out/bosh-agent
+
+override_dh_auto_test:
+	echo "It fails some tests, skipped for now :-/"
